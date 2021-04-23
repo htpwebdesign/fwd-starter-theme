@@ -9,7 +9,7 @@ License URI: LICENSE
 
 == Description ==
 
-A starter theme for the WordPress module of the Front-end Web Developer program at BCIT.
+A starter theme for the FWDP 3600 course (Content Management Systems) of the Front-end Web Developer program at BCIT.
 
 == Installation ==
 
