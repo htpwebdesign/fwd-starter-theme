@@ -9,7 +9,7 @@
 
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.2.2' );
+	define( '_S_VERSION', '1.2.3' );
 }
 
 if ( ! function_exists( 'fwd_setup' ) ) :
@@ -68,7 +68,7 @@ if ( ! function_exists( 'fwd_setup' ) ) :
 				'caption',
 				'style',
 				'script',
-				'navigation-widgets'
+				'navigation-widgets',
 			)
 		);
 
@@ -99,7 +99,7 @@ if ( ! function_exists( 'fwd_setup' ) ) :
 				'width'       			=> 250,
 				'flex-width'  			=> true,
 				'flex-height' 			=> true,
-				//'unlink-homepage-logo' 	=> true,
+				// 'unlink-homepage-logo' 	=> true,
 			)
 		);
 
@@ -110,10 +110,7 @@ if ( ! function_exists( 'fwd_setup' ) ) :
 		 */
 		add_theme_support( 'wp-block-styles' );
 		add_theme_support( 'responsive-embeds' );
-		add_theme_support( 'custom-line-height' );
-		add_theme_support( 'custom-units' );
-		add_theme_support( 'custom-spacing' );
-		//add_theme_support( 'align-wide' );
+		// add_theme_support( 'align-wide' );
 	}
 endif;
 add_action( 'after_setup_theme', 'fwd_setup' );

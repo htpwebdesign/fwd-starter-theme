@@ -48,14 +48,8 @@ Temporary Items
 .sass-cache
 *.scssc
 
-# Sublime Text 2 or 3 specific files #
-#################################
 
-*.sublime-project
-*.sublime-workspace
-
-
-# Other text editor folders or files #
+# Code editor folders or files #
 ######################################
 
 .cache
@@ -68,16 +62,24 @@ nbproject
 .komodotools
 _notes
 dwsync.xml
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+.vscode
 
 
-# Folders to ignore #
+# Development Files and Folders #
 #####################
 
 .tmp/
 node_modules/
+gulpfile.js
+package.json
+package-lock.json
+.eslintrc.js
 
 
-# Misc files to ignore #
+# Misc files #
 ########################
 
 *.diff
@@ -89,3 +91,12 @@ node_modules/
 *.swp
 *.vi
 *~
+
+
+# Ignore compiled CSS from repository #
+#####################
+
+*.css.map
+*.map
+style.css
+woocommerce.css
