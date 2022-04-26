@@ -4,8 +4,8 @@ Theme URI: http://underscores.me/
 Author: Jonathon Leathers
 Author URI: https://wp.bcitwebdeveloper.ca/
 Description: A starter theme for the WordPress module of the Technical Web Designer program at BCIT.
-Version: 1.2.4
-Tested up to: 5.8
+Version: 1.2.5
+Tested up to: 5.9
 Requires PHP: 7.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -701,57 +701,53 @@ svg path {
 	padding: 3rem 1rem 1rem;
 }
 
-@supports (grid-area: auto) {
-
-	@media screen and (min-width: 50em) {
-		.site {
-			max-width: 2200px;
-			display: grid;
-			grid-template-columns: 1fr minmax(auto, 720px) minmax(auto, 280px) 1fr;
-			grid-template-areas:
-				"header header header header"
-				". main sidebar ."
-				"footer footer footer footer";
-		}
-
-		.page-template-left-sidebar .site {
-			grid-template-columns: 1fr minmax(auto, 280px) minmax(auto, 720px) 1fr;
-			grid-template-areas:
-				"header header header header"
-				". sidebar main ."
-				"footer footer footer footer";
-		}
-
-		.no-sidebar .site,
-		.page-template-full-width .site {
-			grid-template-columns: 1fr minmax(0, 1000px) 1fr;
-			grid-template-areas:
-				"header header header"
-				". main ."
-				"footer footer footer";
-		}
-
-		.site-header {
-			grid-area: header;
-		}
-
-		.site-main {
-			grid-area: main;
-		}
-
-		.widget-area {
-			grid-area: sidebar;
-		}
-
-		.page-template-left-sidebar .widget-area {
-			padding: 3rem 3rem 1rem 1rem;
-		}
-
-		.site-footer {
-			grid-area: footer;
-		}
+@media screen and (min-width: 50em) {
+	.site {
+		max-width: 2200px;
+		display: grid;
+		grid-template-columns: 1fr minmax(auto, 720px) minmax(auto, 280px) 1fr;
+		grid-template-areas:
+			"header header header header"
+			". main sidebar ."
+			"footer footer footer footer";
 	}
 
+	.page-template-left-sidebar .site {
+		grid-template-columns: 1fr minmax(auto, 280px) minmax(auto, 720px) 1fr;
+		grid-template-areas:
+			"header header header header"
+			". sidebar main ."
+			"footer footer footer footer";
+	}
+
+	.no-sidebar .site,
+	.page-template-full-width .site {
+		grid-template-columns: 1fr minmax(0, 1000px) 1fr;
+		grid-template-areas:
+			"header header header"
+			". main ."
+			"footer footer footer";
+	}
+
+	.site-header {
+		grid-area: header;
+	}
+
+	.site-main {
+		grid-area: main;
+	}
+
+	.widget-area {
+		grid-area: sidebar;
+	}
+
+	.page-template-left-sidebar .widget-area {
+		padding: 3rem 3rem 1rem 1rem;
+	}
+
+	.site-footer {
+		grid-area: footer;
+	}
 }
 
 /*--------------------------------------------------------------
@@ -787,17 +783,17 @@ svg path {
 		text-align: center;
 	}
 
-	@supports (grid-area: auto) {
-		.site-header {
-			display: grid;
-			grid-template-columns: 1fr minmax(auto, 25rem) minmax(auto, 37.5rem) 1fr;
-			justify-content: center;
-		}
-		.site-branding {
-			grid-column: 2/3;
-			text-align: left;
-		}
+	.site-header {
+		display: grid;
+		grid-template-columns: 1fr minmax(auto, 25rem) minmax(auto, 37.5rem) 1fr;
+		justify-content: center;
 	}
+
+	.site-branding {
+		grid-column: 2/3;
+		text-align: left;
+	}
+
 }
 
 
@@ -1070,33 +1066,31 @@ svg path {
 		margin: .5em 1em;
 	}
 
-	@supports (grid-area: auto) {
-		.site-footer {
-			text-align: left;
-			display: grid;
-			grid-template-columns: minmax(auto, 62.5rem);
-			justify-content: center;
-		}
+	.site-footer {
+		text-align: left;
+		display: grid;
+		grid-template-columns: minmax(auto, 62.5rem);
+		justify-content: center;
+	}
 
-		.footer-contact {
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-			align-items: flex-start;
-		}
-		
-		.footer-menus {
-			display: grid;
-			grid-template-columns: 2fr 1fr;
-			align-items: center;
-		}
+	.footer-contact {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		align-items: flex-start;
+	}
+	
+	.footer-menus {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		align-items: center;
+	}
 
-		.footer-navigation ul {
-			justify-content: flex-start;
-		}
+	.footer-navigation ul {
+		justify-content: flex-start;
+	}
 
-		.social-navigation ul {
-			justify-content: flex-end;
-		}
+	.social-navigation ul {
+		justify-content: flex-end;
 	}
 
 }

@@ -8,7 +8,7 @@ Installation
 
 ### Requirements
 
-- Tested up to: 5.8
+- Tested up to: 5.9
 - Requires PHP: 7.0
 - License: GNU General Public License v2 or later
 - License URI: LICENSE
